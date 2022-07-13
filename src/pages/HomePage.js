@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const HomePage = () => {
 
@@ -38,7 +38,7 @@ const HomePage = () => {
 
           {/* Works n More Grids */}
           <div className='works-n-more-grid-left'>
-              <a href='' className='works-n-more-card card-w-img'>
+              <a href='/#' className='works-n-more-card card-w-img'>
                 <div>
                   <div className='name'>
                     <img src='/res/works/codesimp.svg' alt='Code Simp Logo'/>
@@ -49,10 +49,10 @@ const HomePage = () => {
                     that provides hands on coding tips and tricks.
                   </p>
                 </div>
-                <img src='' alt='Card Graphics'/>
+                <img src='/res/works/default-work.svg' alt='Card Graphics'/>
               </a>
 
-              <a href='' className='works-n-more-card'>
+              <a href='/#' className='works-n-more-card'>
                 <div className='name'>
                   <img src='/res/works/ethersensei.svg' alt='Ether Sensei Logo'/>
                   <h3>Ether Sensei</h3>
@@ -63,7 +63,7 @@ const HomePage = () => {
           </div>
           
           <div className='works-n-more-grid-right'>
-            <a href='' className='works-n-more-card'>
+            <a href='/#' className='works-n-more-card'>
               <div className='name'>
                 <img src='/res/works/devkitz.svg' alt='Dev Kitz Logo'/>
                 <h3>Dev Kitz</h3>
@@ -72,7 +72,7 @@ const HomePage = () => {
               for different purpose to developers.</p>
             </a>
 
-            <a href='' className='works-n-more-card card-w-img'>
+            <a href='/#' className='works-n-more-card card-w-img'>
               <div>
                 <div className='name'>
                   <img src='/res/works/errorsensei.svg' alt='Error Sensei Logo'/>
@@ -83,7 +83,8 @@ const HomePage = () => {
                   <span className='prm-color'> bugs and errors.</span>
                 </p>
               </div>
-              <img src='' alt='Card Graphics'/>
+              {/* Image */}
+              <img src='/res/works/default-work.svg' alt='Card Graphics'/>
             </a>
           </div>
         </section>
@@ -94,17 +95,17 @@ const HomePage = () => {
           <p>It doesn't have to end here let's get conencted !</p>
 
           <div className='connection-grid'>
-            <a href='' className='social'>
-              <img src='/res/socials/instagram.svg'/>
+            <a href='/#' className='social'>
+              <img src='/res/socials/instagram.svg' alt='Instagram Logo'/>
             </a>
-            <a href='' className='social'>
-              <img src='/res/socials/linkedin.svg'/>
+            <a href='/#' className='social'>
+              <img src='/res/socials/linkedin.svg' alt='LinkedIn Logo'/>
             </a>
-            <a href='' className='social'>
-              <img src='/res/socials/twitter.svg'/>
+            <a href='/#' className='social'>
+              <img src='/res/socials/twitter.svg' alt='Twitter Logo'/>
             </a>
-            <a href='' className='social'>
-              <img src='/res/socials/codepen.svg'/>
+            <a href='/#' className='social'>
+              <img src='/res/socials/codepen.svg' alt='Codepen Logo'/>
             </a>
           </div>
         </section>
