@@ -1,0 +1,173 @@
+/**
+* @titl Button Styles
+* @desc Button styles are imported here
+*/
+
+//base button style
+button{
+    padding: $sz-m $sz-xl;
+    border-radius: 100rem;
+    font-size: $sz-m;
+    border: none;
+    cursor: pointer;
+}
+
+//button group
+.btn-grp{
+    margin-top: $sz-xl;
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+//@mark Primary button starts
+.btn-prm{
+    background-color: $prm-color;
+    color: $para-color;
+
+    transition: background-color 200ms linear;
+}
+
+.btn-prm:hover{
+    background-color: $prm-hover-color;
+    transition: background-color 200ms linear;
+}
+
+.btn-prm:active{
+    background-color: $prm-active-color;
+    transition: background-color 200ms linear;
+}
+//@mark Primary button ends here
+
+//@mark Secondary button starts here
+.btn-sec{
+    background-color: $sec-color;
+    color: $prm-color;
+    border: 1px solid $prm-color;
+}
+
+.btn-sec:hover{
+    background-color: $sec-hover-color;
+    transition: background-color 200ms linear;
+}
+
+.btn-sec:active{
+    background-color: $sec-active-color;
+    transition: background-color 200ms linear;
+}
+//@mark Secondary button ends here
+ 
+//@mark Icon Button starts here
+.btn-icon{
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 20rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $sz-m;
+    background-color: $prm-color;
+    border: none;
+}
+
+.btn-icon:hover{
+    transition: background-color 200ms linear;
+    background-color: $prm-hover-color;
+}
+
+.btn-icon:active{
+    transition: background-color 200ms linear;
+    background-color: $prm-active-color;
+}
+//@mark Icon Button ends here 
+
+
+/**
+* @titl Media Queries
+* @desc Media queries for the containers 
+*/
+
+//@media screen min-width: 768px
+@media screen and (min-width: 768px){
+    //base button style
+    button{
+        padding: $sz-s-768 $sz-xl-768;
+        font-size: $sz-m-768;
+    }
+    
+    //@mark button group starts here
+    .btn-grp{
+        margin-top: $sz-xl-768;
+    }
+
+    //button icon
+    .btn-icon{
+        height: 5.6rem;
+        width: 5.6rem;
+        padding: $sz-m-768;
+    }
+
+}
+
+//@media screen min-width: 1280px
+@media screen and (min-width: 1280px){
+    //base button style
+    button{
+        padding: $sz-s-1280 $sz-xl-1280;
+        font-size: $sz-m-1280;
+    }
+    
+    //button group
+    .btn-grp{
+        margin-top: $sz-xl-1280;
+    }
+
+    //button icon
+    .btn-icon{
+        height: 6.4rem;
+        width: 6.4rem;
+        padding: $sz-m-1280;
+    }
+}
+
+//@media screen min-width: 1440px
+@media screen and (min-width: 1440px){
+    //base button style
+    button{
+        padding: $sz-s-1440 $sz-xl-1440;
+        font-size: $sz-m-1440;
+    }
+    
+    //button group
+    .btn-grp{
+        margin-top: $sz-xl-1440;
+    }
+
+    //button icon
+    .btn-icon{
+        height: 6.4rem;
+        width: 6.4rem;
+        padding: $sz-m-1440;
+    }
+}
+
+//@media screen min-width: 1920px
+@media screen and (min-width: 1920px){
+    //base button style
+    button{
+        padding: $sz-s-1920 $sz-xl-1920;        
+        font-size: $sz-m-1920;
+    }
+    
+    //button group
+    .btn-grp{
+        margin-top: $sz-xl-1920;
+    }
+
+    //button icon
+    .btn-icon{
+        height: 7.2rem;
+        width: 7.2rem;
+        padding: $sz-m-1920;
+    }
+}

@@ -1,0 +1,137 @@
+/**
+* @titl Navbar Styles
+* @desc Defining all the styles for the navbar
+*/
+
+//Making the header stick to the top
+header{
+    // top: 0;
+    // position: sticky;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+//Desktop navbar
+.navbar{
+    display: flex;
+    width: 100%;
+    height: $nav-l;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//@mark logo starts here
+.logo{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo span{
+    font-size: $sz-xxl;
+    font-weight: bold;
+    margin-left: 0.8rem;
+    color: $para-color;
+}
+//@mark logo ends here
+
+//@mark navbar group starts here
+.navbar-grp{
+    display: inline-flex;
+    align-items: center;
+}
+
+//navbar links
+.navbar-links{
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-links a{
+    margin-left: $sz-xl;
+}
+
+//navbar buttons
+.navbar-grp button{
+    position: fixed;
+    bottom: $sz-xxl;
+    z-index: 10;
+}
+//@mark navbar group ends here
+
+
+/**
+* @titl Media Queries
+* @desc Media queries for the containers 
+*/
+
+//@media screen min-width: 768px
+@media screen and (min-width: 768px){
+    
+    //navbar style
+    .navbar{
+        height: $nav-xl;
+    }
+
+    //@mark navbar-grp starts here
+    .navbar-grp button{
+        bottom: $sz-xxl-768;
+    }
+
+    .navbar-links a{
+        margin-left: $sz-xl-768;
+    }
+    //@mark navbar-grp ends here
+}
+
+//@media screen min-width: 1280px
+@media screen and (min-width: 1280px){
+    
+    //navbar links
+    .navbar-grp button{
+        margin-left: $sz-xl-1280;
+    }
+
+    .navbar-links a{
+        margin-left: $sz-xl-1280;
+    }
+}
+
+//@media screen min-width: 1440px
+@media screen and (min-width: 1440px){
+    
+    //navbar style
+    .navbar{
+        height: $nav-xxl;
+    }
+
+    //navbar links
+    .navbar-grp button{
+        margin-left: $sz-xl-1440;
+    }
+
+    .navbar-links a{
+        margin-left: $sz-xl-1440;
+    }
+}
+
+//@media screen min-width: 1920px
+@media screen and (min-width: 1920px){
+    
+    //navbar links   
+    .navbar-grp button{
+        margin-left: $sz-xl-1920;
+    }
+
+    .navbar-links a{
+        margin-left: $sz-xl-1920;
+    }
+}
+
+
+/**
+* @titl Bottom Imports
+*/
+
+@import './mobNavbar';

@@ -1,0 +1,71 @@
+/**
+* @titl Text Styles
+* @desc Paragraph and a text styles
+*/
+
+//Paragraph and link styles
+p, a{
+    font-size: $sz-m;
+    color: $para-color;
+    line-height: 1.5;
+}
+
+//@mark Starting of link
+a{
+    text-decoration: none;
+    transition: color 200ms linear;
+}
+
+a:hover{
+    color: $prm-color;
+    transition: color 200ms linear;
+}
+
+a:active{
+    color: $prm-active-color;
+    transition: color 200ms linear;
+}
+
+//@mark Ending of link
+
+
+/**
+* @titl Media Queries
+* @desc Media queries for the containers 
+*/
+
+//@media screen min-width: 768px
+@media screen and (min-width: 768px){
+    
+    //Paragraph and link styles
+    p, a{
+        font-size: $sz-m-768;
+    }
+
+}
+
+//@media screen min-width: 1280px
+@media screen and (min-width: 1280px){
+    
+    //Paragraph and link styles
+    p, a{
+        font-size: $sz-m-1280;
+    }
+}
+
+//@media screen min-width: 1440px
+@media screen and (min-width: 1440px){
+    
+    //Paragraph and link styles
+    p, a{
+        font-size: $sz-m-1440;
+    }
+}
+
+//@media screen min-width: 1920px
+@media screen and (min-width: 1920px){
+    //Paragraph and link styles
+    p, a{
+        font-size: $sz-m-1920;
+    }
+}

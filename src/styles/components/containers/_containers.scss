@@ -1,0 +1,98 @@
+/**
+* @titl Container Styels
+* @desc Here we define styles for the various containers that wrap around different pages.
+*/
+
+//main Container
+main{
+    padding: $sz-xxl $sz-m;
+}
+
+//nav Container
+nav{
+    padding: 0 $sz-xxl;
+}
+
+//section container
+section{
+    padding-bottom: $sz-xxl;
+}
+
+
+
+/**
+* @titl Media Queries
+* @desc Media queries for the containers 
+*/
+
+//@media screen min-width: 768px
+@media screen and (min-width: 768px){
+    //main Container
+    main{
+        padding: $sz-xxl-768;
+    }
+    
+    //nav Container
+    nav{
+        padding: 0 $sz-xxl-768;
+    }
+    
+    //section container
+    section{
+        padding-bottom: $sz-xxl-768;
+    }
+}
+
+//@media screen min-width: 1280px
+@media screen and (min-width: 1280px){
+    //main container
+    main{
+        padding: $sz-xxl-1280;        
+    }
+    
+    //nav Container
+    nav{
+        padding: 0 $sz-xxl-1280;
+    }
+    
+    //section container
+    section{
+        padding-bottom: $sz-xxl-1280;
+    }
+}
+
+//@media screen min-width: 1440px
+@media screen and (min-width: 1440px){
+    //main container
+    main{
+        padding: $sz-xxl-1440;
+    }
+    
+    //nav Container
+    nav{
+        padding: 0 $sz-xxl-1440;
+    }
+    
+    //section container
+    section{
+        padding-bottom: $sz-xxl-1440;
+    }
+}
+
+//@media screen min-width: 1920px
+@media screen and (min-width: 1920px){
+    //main container
+    main{
+        padding: $sz-xxl-1920;
+    }
+    
+    //nav Container
+    nav{
+        padding: 0 $sz-xxl-1920;
+    }
+    
+    //section container
+    section{
+        padding-bottom: $sz-xxl-1920;
+    }
+}

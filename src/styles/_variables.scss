@@ -1,0 +1,96 @@
+/*
+* @title Style Variables
+* @desc  Variables for sizing, coloring and spacing conventions, are defined
+*        here.
+*/
+
+/**
+* Size variables for Paddings, Margins and Font Sizes has been defined here. 
+**/
+
+//@screen <768px
+$sz-xxl: 2.4rem;
+$sz-xl: 2rem;
+$sz-l: 1.8rem;
+$sz-m: 1.4rem;
+$sz-s: 1.2rem;
+$sz-xs: 1rem;
+
+//@screen >768px
+$sz-xxl-768: 3.2rem;
+$sz-xl-768: 2.6rem;
+$sz-l-768: 2rem;
+$sz-m-768: 1.6rem;
+$sz-s-768: 1.4rem;
+$sz-xs-768: 1.2rem;
+
+//@screen >1280px
+$sz-xxl-1280: 4.8rem;
+$sz-xl-1280: 3.2rem;
+$sz-l-1280: 2.4rem;
+$sz-m-1280: 1.8rem;
+$sz-s-1280: 1.6rem;
+$sz-xs-1280: 1.2rem;
+
+//@screen >1440px
+$sz-xxl-1440: 5.6rem;
+$sz-xl-1440: 4rem;
+$sz-l-1440: 2.8rem;
+$sz-m-1440: 2rem;
+$sz-s-1440: 1.6rem;
+$sz-xs-1440: 1.4rem;
+
+//@screen >1920px
+$sz-xxl-1920: 6.4rem;
+$sz-xl-1920: 4.8rem;
+$sz-l-1920: 3.2rem;
+$sz-m-1920: 2.2rem;
+$sz-s-1920: 1.8rem;
+$sz-xs-1920: 1.4rem;
+
+/**
+* COLOR variables for various ui components are defined in this section.
+**/
+
+//Basic colors
+$prm-color: #608AFF; 
+$sec-color: #010D1B;
+$card-bg-color: #0E1D30;
+
+//State colors
+$prm-hover-color: #214BBD;
+$sec-hover-color: #0D1B41;
+$card-hover-color: #0b192b;
+
+$prm-active-color: #11328C;
+$sec-active-color: #050F2D;
+$card-active-color: #07121F;
+
+//Text Colors
+$head-color: #FFFFFF;
+$para-color: #FFFFFF;
+
+
+/**
+* NAVBAR Height variables for various ui components are defined in this section.
+**/
+
+$nav-xxl: 8.8rem;
+$nav-xl: 7.6rem;
+$nav-l: 6.8rem;
+$nav-m: 5.6rem;
+
+
+/**
+* SHADOW variables for various ui components are defined in this section.
+**/
+$nav-shadow: 1px 1px 8px rgba(112, 112, 112, 0.2);
+
+
+/**
+* RADIUS variables for various ui components are defined in this section.
+**/
+$rad-xl: 1rem;
+$rad-l: 0.8rem;
+$rad-m: 0.6rem;
+$rad-s: 0.4rem;

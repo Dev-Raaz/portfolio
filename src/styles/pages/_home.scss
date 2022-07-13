@@ -1,0 +1,393 @@
+/*
+* @title Home Page Styles
+* @desc  Home Page styles are all defined here.
+*/
+.top-graphic{
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+//@start introduction starts here
+.introduction{
+
+}
+
+.header{
+
+}
+
+//@start hi starts here
+.hi{
+    display: flex;
+    align-items: center;
+}
+.hi span{
+    border-bottom: 5px solid $prm-color;
+}
+.hi-emoji{
+    height: 6.6rem;
+    width: 6.6rem;
+    margin-left: 1rem;
+    animation: wave 2s linear infinite;
+}
+//@end hi ends here
+
+//download rusume
+.download-resume{
+    margin-right: $sz-xl;
+}
+
+//@end introduction ends here
+
+//@start Works & More Section starts here
+.works-n-more{
+    position: relative;
+}
+
+//works n more graphic
+.middle-graphics{
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+//header group
+.works-n-more .header-grp{
+    position: relative;
+}
+//header
+.works-n-more-header{
+    text-align: center;
+}
+
+//description
+.works-n-more-text{
+    text-align: center;
+}
+
+//@start Works n More Grid System
+.works-n-more-grid-right, .works-n-more-grid-left{
+    position: relative;
+    display: grid;
+    margin-top: $sz-l;
+    grid-template-columns: auto;
+    gap: $sz-l;
+}
+
+//card
+.works-n-more-card{
+    background-color: $card-bg-color;
+    border-radius: $rad-m;
+    padding: $sz-l;
+    transition: background-color 200ms linear;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+//card states
+.works-n-more-card:hover{
+    background-color: $card-hover-color;
+    transition: background-color 200ms linear;
+}
+
+.works-n-more-card:active{
+    background-color: $card-active-color;
+    transition: background-color 200ms linear;
+}
+
+//name
+.works-n-more-card .name{
+    display: flex;
+    align-items: center;
+    margin-bottom: $sz-m;
+}
+//icon
+.works-n-more-card .name img{
+    height: 2.6rem;
+    width: 2.6rem;
+    margin-right: 1rem;
+}
+
+//Headings
+.works-n-more-card h3{
+    margin: 0;
+}
+
+.works-n-more-card p{
+    font-weight: 500;
+}
+
+//card with image
+.card-w-img{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card-w-img > img{
+    margin-bottom: $sz-l;
+    height: 25rem;
+    width: 100%;
+    background-color: #27313C;
+}
+
+//@end Works n More ends here
+
+
+//@start Let's Connect Section
+.lets-connect h1, .lets-connect p{
+    text-align: center;
+}
+
+//connection grid
+.connection-grid{
+    display: flex;
+    gap: $sz-l;
+    justify-content: center;
+    margin-top: $sz-l;
+}
+
+.social{
+    text-decoration: none;
+}
+.social img{
+    background-color: $card-bg-color;
+    padding: $sz-m;
+    border-radius: $rad-l;
+    transition: background-color 200ms linear;
+    cursor: pointer;
+}
+.social img:hover{
+    background-color: $card-hover-color;
+    transition: background-color 200ms linear;
+}
+.social img:active{
+    background-color: $card-active-color;
+    transition: background-color 200ms linear;
+}
+
+/**
+* @titl Animations
+* @desc Some local animations that will be used here 
+*/
+@keyframes wave{
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+   /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+/**
+* @titl Media Queries
+* @desc Media queries for the containers 
+*/
+
+//@media screen min-width: 768px
+@media screen and (min-width: 768px){
+    
+    //@mark download rusume
+    .download-resume{
+        margin-right: $sz-xl-768;
+    }
+
+    //@mark Works n More Grid
+    .works-n-more-grid-left{
+        grid-template-columns: 2fr 1fr;
+        gap: $sz-l-768;
+        margin-top: $sz-l-768;
+    }
+    .works-n-more-grid-right{
+        grid-template-columns: 1fr 2fr;
+        gap: $sz-l-768;
+        margin-top: $sz-l-768;
+    }
+    
+    //card
+    .works-n-more-card{
+        border-radius: $rad-m;
+        padding: $sz-l-768;
+        justify-content: space-between;
+    }
+    
+    //card with image
+    .card-w-img{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    //card img
+    .card-w-img > img{
+        margin-bottom: 0;
+        margin-left: $sz-l-768;
+        height: auto;
+        width: 20rem;
+        min-height: 15rem;
+    }
+
+    //name
+    .works-n-more-card .name{
+        margin-bottom: $sz-m-768;
+    }
+    //icon
+    .works-n-more-card .name img{
+        height: 3.2rem;
+        width: 3.2rem;
+        margin-right: 1.2rem;
+    }
+
+    //@start let's connect
+    //connection grid
+    .connection-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: $sz-l-768;
+        margin-top: $sz-l-768;
+    }
+}
+
+//@media screen min-width: 1280px
+@media screen and (min-width: 1280px){
+    //@mark introduction starts here
+    .introduction{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .introduction .hero-img{
+        height: 45rem;
+    }
+    
+    //@mark download rusume
+    .download-resume{
+        margin-right: $sz-xl-1280;
+    }
+    //@mark introduction ends here
+
+    //@mark Works n More Grid
+    .works-n-more-grid-left, .works-n-more-grid-right{
+        gap: $sz-l-1280;
+        margin-top: $sz-l-1280;
+    }
+    
+    //card
+    .works-n-more-card{
+        border-radius: $rad-l;
+        padding: $sz-l-1280;
+    }
+
+    //card with image
+    .card-w-img > img{
+        margin-left: $sz-l-1280;
+        width: 20rem;
+        min-height: 15rem;
+    }
+
+    //name
+    .works-n-more-card .name{
+        margin-bottom: $sz-m-1280;
+    }
+    //icon
+    .works-n-more-card .name img{
+        height: 4.8rem;
+        width: 4.8rem;
+        margin-right: 1.2rem;
+    }
+
+    //@start let's connect
+    //connection grid
+    .connection-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: $sz-l-1280;
+        margin-top: $sz-l-1280;
+    }
+}
+
+//@media screen min-width: 1440px
+@media screen and (min-width: 1440px){
+    
+    //@mark download rusume
+    .download-resume{
+        margin-right: $sz-xl-1440;
+    }
+
+    //@mark Works n More Grid
+    .works-n-more-grid-left, .works-n-more-grid-right{
+        gap: $sz-l-1440;
+        margin-top: $sz-l-1440;
+    }
+
+    //card
+    .works-n-more-card{
+        padding: $sz-l-1440;
+    }
+    //card with image
+    .card-w-img > img{
+        margin-left: $sz-l-1440;
+        width: 25rem;
+        min-height: 20rem;
+    }
+
+    //name
+    .works-n-more-card .name{
+        margin-bottom: $sz-m-1440;
+    }
+
+    //@start let's connect
+    //connection grid
+    .connection-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: $sz-l-1440;
+        margin-right: $sz-l-1440;
+    }
+}
+
+//@media screen min-width: 1920px
+@media screen and (min-width: 1920px){
+    
+    //@mark download rusume
+    .download-resume{
+        margin-right: $sz-xl-1920;
+    }
+
+    //@mark Works n More Grid
+    .works-n-more-grid-left, .works-n-more-grid-right{
+        gap: $sz-l-1920;
+        margin-top: $sz-l-1920;
+    }
+
+    //card
+    .works-n-more-card{
+        border-radius: $rad-xl;
+        padding: $sz-l-1920;
+    }
+    //card with image
+    .card-w-img > img{
+        margin-left: $sz-l-1920;
+    }
+
+    //name
+    .works-n-more-card .name{
+        margin-bottom: $sz-m-1440;
+    }
+    //icon
+    .works-n-more-card .name img{
+        height: 4.8rem;
+        width: 4.8rem;
+        margin-right: 1.4rem;
+    }
+
+    //@start let's connect
+    //connection grid
+    .connection-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: $sz-l-1920;
+        margin-top: $sz-l-1920;
+    }
+}
