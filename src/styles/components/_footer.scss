@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    background-color: #020910;
+    justify-content: center;
+    padding: $sz-m;
+}
+
+
+// --------------------------------------------------------
+// @MEDIA QUERRIES
+// --------------------------------------------------------
+
+@media only screen and (min-width: 768px) {
+    footer {
+        padding: $sz-m-768;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    footer {
+        padding: $sz-m-1280;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    footer {
+        padding: $sz-m-1440;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    footer {
+        padding: $sz-m-1920;
+    }
+}

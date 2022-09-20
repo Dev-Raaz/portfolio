@@ -14,6 +14,7 @@ import { Helmet } from 'react-helmet'
 //User Defined imports
 import { Navbar } from './components'
 import { HomePage } from './pages'
+import { Footer } from './components'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage/>}/>
         </Routes>
+        <Footer/>
       </>
     </Router>
   );
