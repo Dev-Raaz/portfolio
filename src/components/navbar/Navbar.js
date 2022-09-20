@@ -23,10 +23,6 @@ const Navbar = () => {
                         About
                     </a>
                 </div>
-
-                <button className='btn-prm'>
-                    Let's Talk
-                </button>
             </div>
         </nav>
     </header>

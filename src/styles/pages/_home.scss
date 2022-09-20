@@ -138,6 +138,8 @@
     height: 25rem;
     width: 100%;
     background-color: #27313C;
+    border-radius: $rad-l;
+    object-fit: cover;
 }
 
 //@end Works n More ends here
@@ -273,6 +275,7 @@
         height: 45rem;
         object-fit: contain;
         object-position: 100% 50%;
+        width: auto;
     }
     
     //@mark download rusume
