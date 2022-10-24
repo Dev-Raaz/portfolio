@@ -9,7 +9,7 @@ const Works = () => {
             <img className='middle-graphics' src='/res/graphics/middlegraphic.svg' alt='Middle Graphics'/>
             <div className='header-grp'>
               <h1 className='works-n-more-header' data-aos='fade-up'>
-              <span className='prm-color'>Works</span> {'&'} More
+              <span className='prm-color'>Recent</span> Works
               </h1>
               <p className='works-n-more-text' data-aos='fade-up' data-aos-delay='200'>
               Here are all the works and open source <br/> contributions that I have done.
@@ -54,11 +54,11 @@ const Works = () => {
           </div>
           
           {/* COMING SOOON . . . */}
-          {/* <div className='works-n-more-grid-right'>
+          <div className='works-n-more-grid-left'>
             {
               // Devkitz 
             }
-            <a href='/#' 
+            {/* <a href='/#' 
             target='_blank'
             rel='noreferrer'
             className='works-n-more-card'>
@@ -68,31 +68,32 @@ const Works = () => {
               </div>
               <p>An website that <span className='prm-color'>recommends tools </span> 
               for different purpose to developers.</p>
-            </a>
+            </a> */}
 
             {
               // Error Sensei
               }
-            <a href='https://errorsensei.netlify.app'
+            <a href='https://www.oloojastore.com/'
             target='_blank'
             rel='noreferrer' 
             className='works-n-more-card card-w-img'>
               <div>
                 <div className='name'>
-                  <img src='/res/works/errorsensei.svg' alt='Error Sensei Logo'/>
-                  <h3>Error Sensei</h3>
+                  <img src='/res/works/oloojalogo.svg' alt='Error Sensei Logo'/>
+                  <h3>Olooja Store</h3>
                 </div>
                 <p>
-                  A website that helps dev with solutions to common 
-                  <span className='prm-color'> bugs and errors.</span>
+                  Olooja Store is a multivendor E-Commerce platform, that helps 
+                  <span className='prm-color'> Black Business Owners</span> to
+                  sell online and grow.
                 </p>
               </div>
               {
                 // Image
               }
-              <img src='/res/works/default-work.svg' alt='Card Graphics'/>
+              <img src='/res/works/oloojastore.webp' alt='Card Graphics'/>
             </a>
-          </div> */}
+          </div>
         </section>
 
   )
