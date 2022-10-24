@@ -30,7 +30,7 @@ const HomePage = () => {
             <br/>A Web Developer</h1>
 
             <div className='btn-grp'>
-              <a href='/Debraj Singh Resume.pdf' download data-aos='fade-right'>
+              <a href='/Debraj Singh Resume.pdf' download>
               <button 
               className='btn-sec download-resume'>
                 Download My Resume
